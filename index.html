@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript"><!--
+            myTable = new Array(                      // リンク先の登録
+            "https://forms.gle/UdeqLcpvhzop8FCy5",       // はじめに のアドレス
+            "https://forms.gle/fjjwJ9K9RnJ5iK4Y9",          // Step.1 のアドレス
+            "https://forms.gle/C2SHzPsaDmxhDYKo7",         // Step.2 のアドレス
+            "https://forms.gle/5ghXKeP42FXTqiR29",        // Step.3 のアドレス
+            "https://forms.gle/FpzcBQsYjyHsJzST6"        // Step.4 のアドレス
+            );
+            
+            function myRndLink(){                      // 適当に選んでリンクする関数
+              myRnd = Math.floor( Math.random() * myTable.length ); // 0～(URLの数-1)の乱数を求める
+              location.href = myTable[myRnd];          // リンクする
+            }
+            // --></script>
+            
+            <form>
+            <input type="button" value="クリック"
+            onclick="myRndLink()">
+            </form>
+            
+</body>
+</html>
